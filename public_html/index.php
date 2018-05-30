@@ -45,7 +45,7 @@
 					<div class="col-md-6">
 
 						<!-- BEGIN CONTACT FORM -->
-						<form id="demo-form">
+						<form id="demo-form" method="post" action="php/mailer.php">
 							<div class="form-group">
 								<label for="demoName">Name</label>
 								<div class="input-group">
@@ -83,11 +83,14 @@
 								</div>
 							</div>
 
+							<div class="g-recaptcha" data-sitekey="6LcAZlwUAAAAAJZbbJu-7qKOIO3MfTGe_XolG_0L"></div>
+
 							<button class="btn btn-info" type="submit">Submit</button>
 							<button class="btn btn-default" type="reset">Reset</button>
 						</form>
 						<!-- END CONTACT FORM-->
 
+						<div id="output-area"></div>
 					</div><!-- /.col-sm-6 -->
 				</div><!-- /.row -->
 			</main>
